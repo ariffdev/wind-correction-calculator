@@ -1,0 +1,41 @@
+:root{
+  --my-blue: #1D5D9B;
+  --my-grey: #D3D3D3; /*Same as light gray*/
+}
+
+*{
+  margin: 0;
+}
+
+
+body{
+  font-family: 'M PLUS 1', sans-serif;
+}
+
+
+
+.page{
+  display: grid;
+  grid-template-columns: 10px 5fr 10px;
+}
+
+.empty-space{
+  flex: 10px;
+}
+
+.main-section{
+  flex: 2;
+}
+
+@media (min-width: 768px) {
+  .page{
+   grid-template-columns: 10px 5fr 10px;
+  }
+}
+
+
+.title-top-bar{
+  background-color: red;
+  height: 20px;
+  width: 50px;
+}
