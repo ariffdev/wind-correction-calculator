@@ -1,5 +1,5 @@
 .footer-lining {
-  background-color: lightgray;
+  background-color: var(--my-grey);
   height: 5px;
   margin-top: 30px;
 }
@@ -10,7 +10,11 @@ footer {
   width: 100%;
   background-color: var(--my-blue);
   align-items: center;
-  justify-content: left;
-  padding-left: 30%;
+  justify-content: center;
   height: 100px;
+}
+
+
+.footer-link{
+  color: var(--my-grey);
 }
