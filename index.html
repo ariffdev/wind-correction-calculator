@@ -51,27 +51,27 @@
         </select>
         
         <p>Mark</p>
-        <div class="mark-container"> <!--Had to create a flexbox to get the the selector and the unit together-->
+        <div class="mark-container"> <!--Had to create a grid to get the the selector and the unit together-->
           <div><input id="mark-selector" type="number" step="0.01" value="9.58"></div>
-          <div class="unit">s</div>
+          <div class="unit" id="mark-unit">s</div>
         </div>
       
         <p>Wind</p>
-        <div class="wind-container"> <!--Had to create a flexbox to get the the selector and the unit together-->
+        <div class="wind-container"> <!--Had to create a grid to get the the selector and the unit together-->
           <div><input id="wind-selector" type="number" step="0.01" value="0"></div>
           <div class="unit">m/s</div>
         </div>
         
-        <p>Predicted Mark at +0.0 m/s</p>
-        <div class="pred-mark-zero-container"> <!--Had to create a flexbox to get the the selector and the unit together-->
-          <div><input id="pred-mark-zero-output" type="number" value="9.58"  disabled></div>
-          <div class="unit">s</div>
+        <p>Adjusted Mark at +0.0 m/s</p>
+        <div class="adjusted-mark-zero-container"> <!--Had to create a grid to get the the selector and the unit together-->
+          <div><input id="adjusted-mark-zero-output" type="number" value="9.58"  disabled></div>
+          <div class="adjusted-mark-unit">s</div>
         </div>
         
-        <p>Predicted Mark at +2.0 m/s</p>
-        <div class="pred-mark-two-container"> <!--Had to create a flexbox to get the the selector and the unit together-->
-          <div><input id="pred-mark-two-output" type="number" value="9.51" disabled></div>
-          <div class="unit">s</div>
+        <p>Adjusted Mark at +2.0 m/s</p>
+        <div class="adjusted-mark-two-container"> <!--Had to create a grid to get the the selector and the unit together-->
+          <div><input id="adjusted-mark-two-output" type="number" value="9.51" disabled></div>
+          <div class="adjusted-mark-unit">s</div>
         </div>
     </div>
     <div class="blank-side-section"></div>
@@ -84,6 +84,7 @@
     <p class="citation">Based on <a class="footer-link" target="_blank" href="https://jeffchen.dev/projects/track/wind-correction/">Jeff Chen's Wind Correction Converter</a></p>
   </footer>
 
-  
+  <script src="scripts/script.js"></script>
+  <script src="scripts/conversion.js"></script>
 </body>
 </html>
