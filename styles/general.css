@@ -13,29 +13,22 @@ body{
 }
 
 
-
-.page{
+.page-grid{
   display: grid;
-  grid-template-columns: 10px 5fr 10px;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: space-between;
 }
 
-.empty-space{
-  flex: 10px;
-}
-
-.main-section{
-  flex: 2;
-}
-
-@media (min-width: 768px) {
-  .page{
-   grid-template-columns: 10px 5fr 10px;
+/* Reduce the width of the blank side sections when the screen is small */
+@media (max-width: 800px){
+  .page-grid{
+    grid-template-columns: 10% 80% 10%;
   }
 }
 
-
-.title-top-bar{
-  background-color: red;
+.title-top-line{
+  background-color: var(--my-grey);
   height: 20px;
-  width: 50px;
+  width: 34px;
 }
+
