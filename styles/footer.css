@@ -1,0 +1,16 @@
+.footer-lining {
+  background-color: lightgray;
+  height: 5px;
+  margin-top: 30px;
+}
+
+
+footer {
+  display: flex;
+  width: 100%;
+  background-color: var(--my-blue);
+  align-items: center;
+  justify-content: left;
+  padding-left: 30%;
+  height: 100px;
+}

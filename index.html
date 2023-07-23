@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
   <!--The header of the page-->
@@ -26,9 +27,60 @@
     <div class="blank-side-section"></div>
     <div class="main-section">
       <div class="title-top-line"></div>
+      <!--Page title-->
+      <p class="title">Wind Correction Calculator</p>
+      <p class="paper-info">
+        Corrects sprint and jump marks for wind, based on 
+        <a class="paper-link" target="_blank"
+        href="https://www.tandfonline.com/doi/full/10.1080/17461391.2018.1480062?scroll=top&needAccess=true">
+        M. Moinat, O. Fabius & K. S. Emanuel (2018) Data-driven quantification of the effect of wind on 
+        athletics performance, European Journal of Sport Science, 18:9, 1185-1190, DOI: 10.1080/17461391.2018.1480062.
+        </a>
+      </p>
+      <!--Main converter section-->
+
+        <p>Event</p>
+        <!--Event selector drop down bottom-->
+        <select name="" id="event-selector">
+          <option selected value="100m">100m</option>
+          <option value="200m">200m</option>
+          <option value="100mH">100mH</option>
+          <option value="110mH">110mH</option>
+          <option value="Long Jump">Long Jump</option>
+          <option value="Triple Jump">Triple Jump</option>
+        </select>
+        
+        <p>Mark</p>
+        <div class="mark-container"> <!--Had to create a flexbox to get the the selector and the unit together-->
+          <div><input id="mark-selector" type="number" step="0.01" value="9.58"></div>
+          <div class="unit">s</div>
+        </div>
+      
+        <p>Wind</p>
+        <div class="wind-container"> <!--Had to create a flexbox to get the the selector and the unit together-->
+          <div><input id="wind-selector" type="number" step="0.01" value="0"></div>
+          <div class="unit">m/s</div>
+        </div>
+        
+        <p>Predicted Mark at +0.0 m/s</p>
+        <div class="pred-mark-zero-container"> <!--Had to create a flexbox to get the the selector and the unit together-->
+          <div><input id="pred-mark-zero-output" type="number" value="9.58"  disabled></div>
+          <div class="unit">s</div>
+        </div>
+        
+        <p>Predicted Mark at +2.0 m/s</p>
+        <div class="pred-mark-two-container"> <!--Had to create a flexbox to get the the selector and the unit together-->
+          <div><input id="pred-mark-two-output" type="number" value="9.51" disabled></div>
+          <div class="unit">s</div>
+        </div>
     </div>
     <div class="blank-side-section"></div>
   </div>
+
+    <!--Lining for the footer-->
+  <div class="footer-lining"></div>
+  <!--Footer-->
+  <footer></footer>
 
   
 </body>
