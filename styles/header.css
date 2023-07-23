@@ -7,6 +7,13 @@ header{
   height: 125px;
 }
 
+/* when screen gets blah resize the header height */
+@media (max-width: 800px){
+  header{
+    height: 90px;
+  }
+}
+
 .header-lining{
   background-color: lightgray;
   height: 5px;
