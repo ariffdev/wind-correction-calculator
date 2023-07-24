@@ -21,7 +21,7 @@ body{
 }
 
 /* Reduce the width of the blank side sections when the screen is small */
-@media (max-width: 800px){
+@media (max-width: 1000px){
   .page-grid{
     grid-template-columns: 10% 80% 10%;
   }
