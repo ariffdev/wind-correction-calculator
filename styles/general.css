@@ -71,8 +71,8 @@ body{
 
 .mark-container,
 .wind-container,
-.adjusted-mark-zero-container,
-.adjusted-mark-two-container{
+.zero-adjusted-mark-container,
+.max-legal-performance-container{
   display: grid;
   grid-template-columns: 88% 12%;
   width: 100%;
@@ -80,10 +80,9 @@ body{
 
 
 #mark-selector,
-#wind-selector,
-#adjusted-mark-zero-output,
-#adjusted-mark-two-output{
+#wind-selector{
   width: 100%;
+  border-style: solid;
   height: 40px;
   border-radius: 5px;
   border-width: 1px;
@@ -97,8 +96,24 @@ body{
   border-width: 2px;
 }
 
+
+#zero-adjusted-mark-output,
+#max-legal-performance-output {
+  width: 100%;
+  border-style: solid;
+
+  height: 41.9px;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-width: 1px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
 .unit,
-.adjusted-mark-unit{
+#adjusted-mark-unit-1,
+#adjusted-mark-unit-2{
   border-style: solid;
   border-radius: 5px;
   border-top-left-radius: 0px;

@@ -42,12 +42,12 @@
         <p>Event</p>
         <!--Event selector drop down bottom-->
         <select name="" id="event-selector">
-          <option selected value="100m">100m</option>
-          <option value="200m">200m</option>
-          <option value="100mH">100mH</option>
-          <option value="110mH">110mH</option>
-          <option value="Long Jump">Long Jump</option>
-          <option value="Triple Jump">Triple Jump</option>
+          <option selected value="e_100m">100m</option>
+          <option value="e_200m">200m</option>
+          <option value="e_100mH">100mH</option>
+          <option value="e_110mH">110mH</option>
+          <option value="e_LJ">Long Jump</option>
+          <option value="e_TJ">Triple Jump</option>
         </select>
         
         <p>Mark</p>
@@ -58,20 +58,20 @@
       
         <p>Wind</p>
         <div class="wind-container"> <!--Had to create a grid to get the the selector and the unit together-->
-          <div><input id="wind-selector" type="number" step="0.01" value="0"></div>
+          <div><input id="wind-selector" type="number" step="0.1" value="0"></div>
           <div class="unit">m/s</div>
         </div>
         
         <p>Adjusted Mark at +0.0 m/s</p>
-        <div class="adjusted-mark-zero-container"> <!--Had to create a grid to get the the selector and the unit together-->
-          <div><input id="adjusted-mark-zero-output" type="number" value="9.58"  disabled></div>
-          <div class="adjusted-mark-unit">s</div>
+        <div class="zero-adjusted-mark-container"> <!--Had to create a grid to get the the selector and the unit together-->
+          <div id="zero-adjusted-mark-output"></div>
+          <div id="adjusted-mark-unit-1">s</div>
         </div>
         
         <p>Adjusted Mark at +2.0 m/s</p>
-        <div class="adjusted-mark-two-container"> <!--Had to create a grid to get the the selector and the unit together-->
-          <div><input id="adjusted-mark-two-output" type="number" value="9.51" disabled></div>
-          <div class="adjusted-mark-unit">s</div>
+        <div class="max-legal-performance-container"> <!--Had to create a grid to get the the selector and the unit together-->
+          <div id="max-legal-performance-output"></div>
+          <div id="adjusted-mark-unit-2">s</div>
         </div>
     </div>
     <div class="blank-side-section"></div>
@@ -84,6 +84,6 @@
     <p class="citation">Based on <a class="footer-link" target="_blank" href="https://jeffchen.dev/projects/track/wind-correction/">Jeff Chen's Wind Correction Converter</a></p>
   </footer>
 
-  <script src="scripts/script.js" type="module"></script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
